@@ -1,0 +1,137 @@
+.hero__container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 640px) {
+  .hero__container {
+    padding: 40px 0;
+  }
+
+  .hero__container__logo {
+    height: 40px;
+  }
+
+  .hero__container__text {
+    margin: 24px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.hero__container:before {
+  content: "";
+  z-index: 0;
+  opacity: .02;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__container__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 800;
+}
+
+.hero__container__button {
+  text-align: center;
+  color: #fff;
+  background-color: #2ed573;
+  border-radius: 14px;
+  margin: 20px auto;
+  padding: 7px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero__container__button:hover {
+  background-color: #31c76f;
+  box-shadow: 0 4px 7px #0003;
+}
+
+.hero__container__button:active {
+  transform: scale(.95);
+  box-shadow: 0 2px 6px #0003;
+}
+
+.hero__container__logo {
+  max-width: 100%;
+  height: 150px;
+  margin-top: -195px;
+  margin-left: -63px;
+}
+
+.hero__container__head__info {
+  background-image: url("../hero-sample.90cc6687.png");
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+}
+
+.hero__container__info__bar {
+  background-color: #7bc45c;
+  border-radius: 10px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.hero__container__info__bar ul {
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.hero__container__info__bar ul b {
+  display: block;
+}
+
+.events__info {
+  display: flex;
+}
+
+.event__img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 180px;
+  margin-bottom: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #f1f2f6;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
